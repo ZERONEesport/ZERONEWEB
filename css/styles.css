@@ -59,9 +59,9 @@ td {
 /*================================================================================*/
 /*=================================== NAV BAR ===================================*/
 /*================================================================================*/
-/*header nav.menu-bar {
+header nav.menu-bar {
     overflow: hidden;
-    background-color: #292929;
+    background-color: #1b1b1b;
     position: fixed;
     width: 100%;
     opacity: 1;
@@ -71,10 +71,10 @@ td {
     text-align: left ;
     z-index: 1;
     box-shadow: 0px 5px 10px #242323;
-}*/
+}
 header nav.menu-bar ul li {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+    font-family: 'sans-serif', sans-serif;
+    font-size: 20px;
 }
 .menu {
     height: 6em;
@@ -150,7 +150,7 @@ body {
 footer {
     flex-shrink: 0;
     width: 100%;
-    background: #292929;
+    background: #1b1b1b;
     color: #ffffff;
     border-top: solid;
     border-top-width: 6px;
@@ -224,7 +224,7 @@ div.footer_contact ul.footer_text li:hover a{
 /*================================================================================*/
 @media (prefers-color-scheme: dark){
     body {
-        background-color: #292929;
+        background-color: #1b1b1b;
     }
 }
 @media (prefers-color-scheme: light){
