@@ -7,10 +7,6 @@
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <script src="https://kit.fontawesome.com/d8afbd2738.js" crossorigin="anonymous"></script>
 
-      <!-- Polie d'écriture font-family: 'Rajdhani', sans-serif; -->
-      <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
       <!-- Polie d'écriture font-family: 'Bebas Neue', cursive; font-family: 'Rajdhani', sans-serif; -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,19 +16,23 @@
     <body>
 <!-- La nav bar qui reste fixe-->
         <header>
-            <nav class = menu-bar>
+            <nav class = navbar>
+                <div class="logo">
+                    <img class="fit-picture" src="img/icon.png" width=100px>
+                </div>
+                <div class="nav">
                 <ul class="menu">
-                     <li><a href="#">NEWS</a></li>
-                     <li><a href="#">TEAM</a>
+                     <li><a href="news.html">NEWS</a></li>
+                     <li><a href="team.html">TEAM</a>
                          <ul class="sousmenu">
                            <li><a href="#">Sous-menu 1</a></li>
                            <li><a href="#">Sous-menu 2</a></li>
                            <li><a href="#">Sous-menu 3</a></li>
                          </ul>
                        </li>
-                     <li><a href="#">SHOP</a></li>
-                     <li><a href="#">PARTNERS</a></li>
-                     <li><a href="information.html">INFORMATIONS</a>
+                     <li><a href="shop.html">SHOP</a></li>
+                     <li><a href="partners.html">PARTNERS</a></li>
+                     <li><a href="informations.html">INFORMATIONS</a>
                          <ul class="sousmenu">
                              <li><a href="#">Sous-menu 1</a></li>
                              <li><a href="#">Sous-menu 2</a></li>
@@ -41,11 +41,12 @@
                      </li>
                      <li><a href="contact.html">CONTACT</a></li>
                 </ul>
+                </div>
             </nav>
         </header>
 <!-- Block principal du site web -->
         <div class="principal">
-            <div class="Stream">
+            <!-- <div class="Stream">
                 <div id="twitch-embed"></div>
                     <script src="https://embed.twitch.tv/embed/v1.js"></script>
                     <script type="text/javascript">
@@ -54,9 +55,9 @@
                         height: 800,
                         channel: "myst3retv",
                         theme: "dark",
-                      });
+                      }); 
                     </script>
-                </div>
+                </div>-->
             </div>
 <!-- Le bas de page -->
         <footer>

@@ -59,7 +59,7 @@ td {
 /*================================================================================*/
 /*=================================== NAV BAR ===================================*/
 /*================================================================================*/
-header nav.menu-bar {
+nav.menu-bar {
     overflow: hidden;
     background-color: #1b1b1b;
     position: fixed;
@@ -72,15 +72,15 @@ header nav.menu-bar {
     z-index: 1;
     box-shadow: 0px 5px 10px #242323;
 }
-header nav.menu-bar ul li {
+nav.menu-bar ul li {
     font-family: 'sans-serif', sans-serif;
     font-size: 20px;
 }
 .menu {
-    height: 6em;
+    height: 70px;
     list-style: none;
-    padding-left: 50px;
-    padding-top: 25px;
+    padding-left: 100px;
+    padding-top: 27px;
 }
 
 .menu li {
@@ -127,7 +127,10 @@ header nav.menu-bar ul li {
 .menu li:hover .sousmenu {
     display: block;
 }
-
+nav.navbar {
+    float : left;
+    margin: 30px;
+}
 /*================================================================================*/
 /*==================================== HEADER ====================================*/
 /*================================================================================*/
