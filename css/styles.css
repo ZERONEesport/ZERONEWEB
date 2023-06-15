@@ -34,8 +34,6 @@ h6{
 /*=================================== LISTE ===================================*/
 
 ul {
-    margin: 0;
-    padding: 0;
 }
 li {
     text-decoration: none;
@@ -46,7 +44,7 @@ li {
 /*=================================== TABLEAU ===================================*/
 
 table {   
-}
+}   
 tr {    
 }
 th {
@@ -57,92 +55,67 @@ td {
 }
 
 /*================================================================================*/
-/*=================================== NAV BAR ===================================*/
+/*=================================== HEADER NAV BAR ===================================*/
 /*================================================================================*/
-nav.menu-bar {
-    overflow: hidden;
-    background-color: #1b1b1b;
-    position: fixed;
-    width: 100%;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: left ;
-    z-index: 1;
-    box-shadow: 0px 5px 10px #242323;
-}
-nav.menu-bar ul li {
-    font-family: 'sans-serif', sans-serif;
-    font-size: 20px;
-}
-.menu {
-    height: 70px;
-    list-style: none;
-    padding-left: 100px;
-    padding-top: 27px;
-}
 
-.menu li {
+header nav.navbar {
+    position: fixed;
+    top: 0;right: 0;left: 0;
+    background: #1b1b1b;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: solid #ffffff;
+}
+header nav.navbar ul {
+    list-style: none;
+}
+header nav.navbar ul li {
+    position: relative;
     float: left;
 }
+header nav.navbar ul li:hover>ul {
+    display: initial;
+}
 
-.menu li a:link, .menu li a:visited {
+header nav.navbar ul li a{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+    color: #fff;
     display: block;
-    color: #FFF;
-    padding: 6px 10px;
-    text-align: left;
-    text-decoration: none;
 }
-.menu li a:hover {
-    color: #9505FF;
+header nav.navbar ul li a:hover{
+    color: #6d3adf;
 }
-
-.menu .sousmenu {
-    list-style-type: none;
-    display: none;
-    padding: 0;
-    margin: 0;
+header nav.navbar ul li ul {
     position: absolute;
+    left: 0;
+    width: 200px;
+    background: #1b1b1b;
+    display: none;
 }
-
-.menu .sousmenu li {
-    float: none;
-    margin: 0;
-    padding: 0;
+header nav.navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
-
-.menu .sousmenu li a:link, .menu li a:visited {
-    display: block;
-    color: #FFF;
-    text-decoration: none;
+header nav.navbar ul li ul li a {
     font-size: 15px;
-    background-color: gray;
-}
-
-.menu .sousmenu li a:hover {
-    color: #9505FF;
-}
-
-.menu li:hover .sousmenu {
+    font-family: sans-serif;
+    padding: 15px;
+    color: #fff;
     display: block;
 }
-nav.navbar {
-    float : left;
-    margin: 30px;
-}
-/*================================================================================*/
-/*==================================== HEADER ====================================*/
-/*================================================================================*/
-header {   
-}
+
 /*================================================================================*/
 /*===================================== BODY =====================================*/
 /*================================================================================*/
 body {
-/*    background-image: url('../img/background.jpg');*/
-    background-repeat: no-repeat;
-    background-color: #ffaf2e;
+    /*background-image: url('../img/background.jpg');*/
+    /*background-repeat: no-repeat;*/
+    background-color: #fff;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -164,8 +137,6 @@ footer a {
 /*================================================================================*/
 /*===================================== DIV =====================================*/
 /*================================================================================*/
-div {    
-}
 div.principal {
     flex: 1 0 auto;
     padding-top: 70px;
